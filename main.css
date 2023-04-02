@@ -1,5 +1,84 @@
+* {
+  text-decoration: none;
+  color: black;
+}
+
 body {
   margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.btn {
+  width: 218px;
+  height: 50px;
+  top: 50px;
+  border-radius: 25px;
+  border: none;
+  background: linear-gradient(to bottom, #FF79DA, #9356DC);
+  color: white;
+}
+
+.stage {
+  text-align: center;
+  width: 322.49px;
+  height: 72.38px;
+  background: #F6F6F6;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  margin-bottom: 25px;
+}
+.stage__nb-stage {
+  color: white;
+  width: 24px;
+  height: 24px;
+  left: 20px;
+  top: 531.86px;
+  background: #9356DC;
+  border-radius: 50%;
+}
+
+.card {
+  height: 251px;
+  width: 340px;
+  left: 0px;
+  top: 0px;
+  border-radius: 15px;
+  margin-bottom: 18px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+}
+.card__img {
+  width: 340px;
+  height: 175px;
+  border-radius: 15px 15px 0 0;
+}
+
+footer {
+  text-align: start;
+  background-color: #353535;
+}
+
+.footer__items {
+  margin: 0px 25px 0px 25px;
+}
+.footer__items__link {
+  display: flex;
+  flex-direction: column;
 }
 
 .header {
@@ -14,11 +93,36 @@ body {
 .locality {
   background: #EAEAEA;
   height: 50px;
+  display: flex;
+  align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
-.locality input {
+.locality__items input {
+  text-align: center;
   border: none;
   background: #EAEAEA;
+}
+
+.quote {
+  text-align: center;
+  padding: 39.5px 34px 57px 34px;
+  background: #F6F6F6;
+}
+
+.tuto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 20px 0 20px;
+}
+
+.restorant-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 /*# sourceMappingURL=main.css.map */

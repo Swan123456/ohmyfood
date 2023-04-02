@@ -1,0 +1,16 @@
+footer {
+    text-align: start;
+    background-color: $colour-background-dark;
+}
+
+.footer {
+    &__items {
+        margin: 0px 25px 0px 25px;
+        &__link {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+
