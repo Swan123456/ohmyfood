@@ -3,25 +3,52 @@
     height: 50px;
     @include center-elements;
     &__items {
+        display: flex;
         input {
             text-align: center;
             border: none;
             background: $colour-background-1;
-            }
+            width: 109px;
+            margin-left: 5%;
+        }
     }
 }
 
 .quote {
     text-align: center;
-    padding: 39.5px 34px 57px 34px;
+    padding: 39.5px 20px 57px 20px;
     background: $colour-background-2;
 }
 
 .tuto {
-    @include center-elements;
-    padding: 0 20px 0 20px;
+    &__title {
+        padding-top: 48px;
+        width: 90%;
+        max-width: 322.49px;
+        text-align: start;
+        margin-left: auto;
+        margin-right: auto;
+        @media (min-width: $desktop) {
+            margin-left: 15%;
+        }
+    }
 }
 
 .restorant-list {
-    @include center-elements;
+    background-color: $colour-background-2;
+    padding-bottom: 66px;
+    &__title {
+        padding-top: 54px;
+        width: 90%;
+        max-width: 322.49px;
+        text-align: start;
+        margin-left: auto;
+        margin-right: auto;
+        @media (min-width: $desktop) {
+            margin-left: 15%;
+        }
+    }
+    @media (min-width: $desktop) {
+        padding-bottom: 30px;
+    }
 }

@@ -5,10 +5,42 @@ footer {
 
 .footer {
     &__items {
-        margin: 0px 25px 0px 25px;
+        display: flex;
+        flex-direction: column;
+        color: white;
+        margin: 0 5% 0 5%;
+        padding-top: 22px;
+        gap: 7px;
+        @media (min-width: $desktop) {
+            flex-direction: row-reverse;
+            padding-top: 64px;
+        }
+        &__logo {
+            color: white;
+            font-family: 'shrikhand';
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
         &__link {
             display: flex;
             flex-direction: column;
+            padding-bottom: 7px;
+            @media (min-width: $desktop) {
+                flex-direction: row;
+                margin-right: 60px;
+                gap: 20px;
+            }
+            a {
+                text-decoration: none;
+                color: white;
+                padding: 4px 0 0 0;
+                .fa-utensils {
+                    margin-right: 8px;
+                }
+                .fa-handshake {
+                    margin-right: 8px;
+                }
+            }
         }
     }
 }
