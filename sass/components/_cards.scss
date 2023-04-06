@@ -35,6 +35,7 @@
     }
     &__nb-stage {
         @include center-elements;
+        aspect-ratio: 1 / 1;
         margin-left: -10px;
         color: white;
         width: 24px;
