@@ -9,4 +9,11 @@
         margin-top: 14px;
         margin-bottom: 5px;
     }
+    &__feedback {
+        color: black;
+        text-align: left;
+        position: absolute;
+        left: 23px;
+        top: 40%;
+    }
 }

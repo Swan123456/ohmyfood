@@ -272,6 +272,13 @@ footer {
   margin-top: 14px;
   margin-bottom: 5px;
 }
+.header__feedback {
+  color: black;
+  text-align: left;
+  position: absolute;
+  left: 23px;
+  top: 40%;
+}
 
 .locality {
   background: #EAEAEA;
@@ -343,16 +350,44 @@ footer {
   overflow: hidden;
 }
 
+.category {
+  margin-bottom: 40px;
+}
+
 .menu {
   background-color: #F6F6F6;
-  width: 100%;
+  display: flex;
+  padding-left: 13px;
+  padding-right: 13px;
+  justify-content: center;
+  max-width: 1055px;
+  margin: auto;
+  margin-top: -50px;
+  z-index: 1;
+  position: relative;
+  border-radius: 25px;
 }
 .menu__title {
   font-family: "shrikhand";
   font-size: 28px;
 }
+.menu .fa-heart {
+  margin-left: 5%;
+}
 .menu__section {
   text-transform: uppercase;
+}
+.menu__item {
+  background-color: white;
+  color: black;
+  max-width: 634px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 69px;
+  box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+  border-radius: 15.0431px;
+  margin-bottom: 12px;
 }
 
 /*# sourceMappingURL=main.css.map */

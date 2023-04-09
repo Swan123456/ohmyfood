@@ -5,15 +5,43 @@
     overflow: hidden;
 }
 
+.category {
+    margin-bottom: 40px;
+}
 .menu {
     background-color: $colour-background-2;
-    width: 100%;
+    display: flex;
+    padding-left: 13px;
+    padding-right: 13px;
+    justify-content: center;
+    max-width: 1055px;
+    margin: auto;
+    margin-top: -50px;
+    z-index: 1;
+    position: relative;
+    border-radius: 25px;
+
     &__title {
         font-family: 'shrikhand';
         font-size: 28px;
     }
+    .fa-heart {
+        margin-left: 5%;
+    }
     &__section {
         text-transform: uppercase;
+    }
+    &__item {
+        background-color: white;
+        color: black;
+        max-width: 634px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 69px;
+        box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+        border-radius: 15.0431px;
+        margin-bottom: 12px;
     }
     &__item-name {
     }
