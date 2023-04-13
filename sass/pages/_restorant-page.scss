@@ -7,6 +7,11 @@
 
 .category {
     margin-bottom: 40px;
+    &:hover {
+        .underline {
+            width: 80px;
+        }
+    }
 }
 .menu {
     background-color: $colour-background-2;
@@ -20,33 +25,111 @@
     z-index: 1;
     position: relative;
     border-radius: 25px;
-
+    &__part {
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
     &__title {
         font-family: 'shrikhand';
         font-size: 28px;
+        font-weight: 400;
     }
     .fa-heart {
         margin-left: 5%;
+        transition: 300ms;
+        &:hover {
+            color: $colour-primary;
+        }
+        &:active {
+            color: $colour-primary;
+        }
     }
     &__section {
         text-transform: uppercase;
+        color: black;
+    }
+    .underline {
+        margin-bottom: 12px;
+        margin-top: 5px;
+        width: 40px;
+        border: 3px solid $colour-secondary;
+        transition: 300ms;
     }
     &__item {
         background-color: white;
         color: black;
         max-width: 634px;
         display: flex;
-        flex-direction: row;
-        align-items: center;
-        height: 69px;
+        justify-content: space-between;
         box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
-        border-radius: 15.0431px;
+        border-radius: 15px;
         margin-bottom: 12px;
+        padding: 12px 12px 12px 15px;
+    }
+    &__item-confirmation {
+        background-color: $colour-secondary;
+        margin: -0.7rem -5rem -0.78rem 1rem;
+        border-radius: 0 20px 20px 0;
+        width: 4rem;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        transition-duration: 0.5s;
+    }
+    &:active &__item-confirmation {
+        margin-right: -1rem;
+    }
+    &__item-wrap-confirmation-icon {
+        height: 1.6rem;
+        width: 1.6rem;
+        background-color: white;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        border-radius: 100px;
+        transform: rotate(180deg);
+        transition-duration: 0.5s;
+    }
+    &:active &__item-wrap-confirmation-icon {
+        transform: rotate(0);
+    }
+    &__item-icon {
+        color: $colour-secondary;
     }
     &__item-name {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 21px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+    &__item-left {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
     }
     &__item-description {
-
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 18px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    &__item-price {
+        font-weight: bold;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        padding-left: 0.5rem;
+    }
+    .btn {
+        @include center-elements;
+        margin: auto;
+        margin-bottom: 40px;
     }
 }
 
