@@ -433,7 +433,7 @@ footer {
   justify-content: center;
   transition-duration: 0.5s;
 }
-.menu:active .menu__item-confirmation {
+.menu:hover .menu__item-confirmation {
   margin-right: -1rem;
 }
 .menu__item-wrap-confirmation-icon {
@@ -447,7 +447,7 @@ footer {
   transform: rotate(180deg);
   transition-duration: 0.5s;
 }
-.menu:active .menu__item-wrap-confirmation-icon {
+.menu:hover .menu__item-wrap-confirmation-icon {
   transform: rotate(0);
 }
 .menu__item-icon {
@@ -466,6 +466,7 @@ footer {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  flex: 1;
 }
 .menu__item-description {
   font-style: normal;

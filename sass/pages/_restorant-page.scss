@@ -76,7 +76,7 @@
         justify-content:center;
         transition-duration: 0.5s;
     }
-    &:active &__item-confirmation {
+    &:hover &__item-confirmation {
         margin-right: -1rem;
     }
     &__item-wrap-confirmation-icon {
@@ -90,7 +90,7 @@
         transform: rotate(180deg);
         transition-duration: 0.5s;
     }
-    &:active &__item-wrap-confirmation-icon {
+    &:hover &__item-wrap-confirmation-icon {
         transform: rotate(0);
     }
     &__item-icon {
@@ -109,6 +109,7 @@
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
+        flex: 1;
     }
     &__item-description {
         font-style: normal;
