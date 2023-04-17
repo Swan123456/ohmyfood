@@ -28,6 +28,7 @@
     &__part {
         overflow: hidden;
         text-overflow: ellipsis;
+        max-width: 345px;
     }
     &__title {
         font-family: 'shrikhand';
@@ -76,7 +77,7 @@
         justify-content:center;
         transition-duration: 0.5s;
     }
-    &:hover &__item-confirmation {
+    .menu__item:hover > .menu__item-confirmation {
         margin-right: -1rem;
     }
     &__item-wrap-confirmation-icon {
@@ -90,11 +91,11 @@
         transform: rotate(180deg);
         transition-duration: 0.5s;
     }
-    &:hover &__item-wrap-confirmation-icon {
-        transform: rotate(0);
-    }
     &__item-icon {
         color: $colour-secondary;
+    }
+    &:hover &__item-icon {         
+        transform: rotate(0);
     }
     &__item-name {
         font-style: normal;
