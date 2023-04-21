@@ -119,15 +119,26 @@
         top: 12px;
         right: 15px;
     }
+    &__like {
+        position: relative;
+        right: 25px;
+    }
     .fa-heart {
         font-size: 22px;
         transition: 300ms;
+        position: absolute;
         &:hover {
             color: $colour-primary;
         }
         &:active {
             color: $colour-primary;
         }
+    }
+    .bg {
+        opacity: 0;
+    }
+    .bg:hover,.bg:active {
+        opacity: 1;
     }
     @media (min-width: $desktop) {
         display: grid;
