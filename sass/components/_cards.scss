@@ -16,7 +16,8 @@
     transition: 300ms;
     opacity: 1;
     &:hover {
-        opacity: 0.8;
+        // opacity: 0.8;
+        background-color: rgba(255, 121, 218, 0.1);
         box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.50);
         .fa-mobile-alt {
             color: $colour-primary;
@@ -124,14 +125,13 @@
         right: 25px;
     }
     .fa-heart {
+        transition: 400ms;
         font-size: 22px;
-        transition: 300ms;
         position: absolute;
-        &:hover {
-            color: $colour-primary;
-        }
-        &:active {
-            color: $colour-primary;
+        &:hover,&:active {
+            background-image: $colour-btn-linear;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
     }
     .bg {

@@ -37,6 +37,8 @@
         display: flex;
         gap: 20px;
         margin-left: 5px;
+        margin-top: 32px;
+        margin-bottom: 42px;
         @media (max-width: 345px) {
             margin-bottom: 25%;
             flex-direction: column;
@@ -46,13 +48,12 @@
         position: relative;
     }
     .fa-heart {
-        transition: 300ms;
+        transition: 400ms;
         position: absolute;
-        &:hover {
-            color: $colour-primary;
-        }
-        &:active {
-            color: $colour-primary;
+        &:hover,&:active {
+            background-image: $colour-btn-linear;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
     }
     .bg {
